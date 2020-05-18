@@ -6,29 +6,29 @@
         <script type="text/javascript"></script>
     </head>
     <body>
-    <p>Enter the string of words and 'Reverse' tab prints the reverse order of string</p>
+    <p>Type your word here</p>
     <script type="text/javascript">
     function reverse(str){
-        var splitString = str.split("");
-        var reverseArray = splitString.reverse();
-        var joinArray = reverseArray.join("");
-        return joinArray;
+        var a = str.split("");
+        var b = a.reverse();
+        var c = b.join("");
+        return c;
     };
-    function reverser(){
-            var x = document.getElementById("targeta");
+    function go(){
+            var x = document.getElementById("texta");
             x.innerHTML = reverse(document.getElementById('str').value);
         }
     </script>
     <form name="mystring">
         <input id="str" type="str" size="20">
-        <input type="button" value="reverse" onClick="reverser();">
+        <input type="button" value="reverse" onClick="go();">
     </form>
     <br>
-    <div id="targeta"></div>
+    <div id="texta"></div>
     </body>
     
     <body>
-        <p1>Please Enter the number, 'Generate Table' prints a table with the first 20 multiples of the number, in order 5x4</p1>
+        <p1>Please Enter the number then print a table with the first 20 multiples</p1>
         <script type="text/javascript">
         function multiple(number){
             list = [];
